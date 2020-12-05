@@ -1,0 +1,21 @@
+04/12/2020--nonopp
+
+Objetivo de esta primera versión es coger un diseño de cssgardem http://www.csszengarden.com/ -> A ROBOT NAMED JIMMY by meltmedia y trabajar básicamente en separar el texto html y la hoja de estilos css
+
+Para ello se crea un proyecto llamado robotjimmy1 
+# hugo new site robotjimmy
+
+y dentro de la carpeta themes se crea un tema nuevo llamado basic-robotjimy
+# hugo new theme basic-robotjimy
+
+Se le indica al proyecto que apunte al nuevo tema editando el archivo config.toml añadiendo la linea -theme = "basic-robotjimy"-
+
+A continuación en la carpeta static del tema se añade la el archivo con hoja de estilo del diseño bajado 215.css
+
+El siguiente paso es cambiar el index.html de la carpeta del tema por el que existe cambiando la linea del estilo a donde tiene que apuntar 
+<link rel="stylesheet" media="screen" href="css/215.css">
+
+Guardar todo y ejecutar
+# hugo server
+
+
